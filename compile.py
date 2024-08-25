@@ -58,7 +58,7 @@ if args.download_flatc:
     print(f"Downloading and extracting flatc from {url}...")
     resp = urlopen(url)
     file = ZipFile(BytesIO(resp.read()))
-    file.extract("bin/flatc")
+    file.extract("flatc", path="./bin")
 
     # chmod +x
     st = os.stat("bin/flatc")
