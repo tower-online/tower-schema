@@ -1,0 +1,19 @@
+include "types.fbs";
+
+namespace tower.network.packet;
+
+enum EntityType: uint16 {
+    NONE,
+    PLAYER_HUMAN,
+    PIGGY
+}
+
+enum EntityResourceType: uint8 {
+    NONE,
+    HEALTH,
+}
+
+enum EntityResourceChangeMode : uint8 {
+    ADD,
+    SET
+}

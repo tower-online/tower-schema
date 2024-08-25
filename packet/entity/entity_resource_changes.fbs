@@ -1,0 +1,16 @@
+include "entity_types.fbs";
+
+namespace tower.network.packet;
+
+struct EntityResourceChange {
+    modify_mode: EntityResourceChangeMode;
+    resource_type: EntityResourceType;
+    entity_id: uint32;
+    modifying_amount: int32;
+}
+
+table EntityResourceChanges {
+    changes: [EntityResourceChange];
+}
+
+root_type EntityResourceChanges;
