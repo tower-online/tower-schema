@@ -3,6 +3,7 @@ include "types.fbs";
 namespace tower.network.packet;
 
 table ClientJoinRequest {
+    username: string;
     character_name: string;
     token: string;
 }
