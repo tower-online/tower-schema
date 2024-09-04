@@ -70,10 +70,11 @@ schemas = pathlib.Path("temp").rglob("*.fbs")
 
 flatc_args = ["./bin/flatc"]
 if args.lang == "cpp":
-    pass
+    flatc_args += ["--cpp", "--cpp-std", "c++17", "--filename-suffix", '', "--filename-ext", "hpp"]
 elif args.lang == "csharp":
-    flatc_args += ["--csharp", "--filename-suffix", '""', "-o", args.output, "-I", f"{os.path.join("temp", args.input)}"]
-    flatc_args += [schema.as_posix() for schema in schemas]
+    flatc_args += ["--csharp", "--filename-suffix", '']
+flatc_args += ["-o", args.output, "-I", f"{os.path.join("temp", args.input)}"]
+flatc_args += [schema.as_posix() for schema in schemas]
 
 print(flatc_args)
 subprocess.run(flatc_args)
