@@ -1,5 +1,4 @@
 include "client/client_join_request.fbs";
-include "client/client_join_response.fbs";
 include "client/heart_beat.fbs";
 
 include "entity/entity_spawns.fbs";
@@ -10,6 +9,7 @@ include "entity/skill/entity_melee_attack.fbs";
 
 include "player/player_enter_zone.fbs";
 include "player/player_exit_zone.fbs";
+include "player/player_info.fbs";
 include "player/player_movement.fbs";
 include "player/player_spawn.fbs";
 
@@ -18,7 +18,6 @@ namespace tower.network.packet;
 union PacketType {
     // client
     ClientJoinRequest,
-    ClientJoinResponse,
     HeartBeat,
 
     // entity

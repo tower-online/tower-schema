@@ -1,12 +1,12 @@
-include "entity_types.fbs";
+include "player_types.fbs";
+include "player_info.fbs";
 
 namespace tower.network.packet;
 
 table PlayerSpawn {
-    entity_type: EntityType;
+    is_master: bool;
     entity_id: uint32;
-    position: Vector2;
-    rotation: float32;
+    info: PlayerInfo;
 }
 
 root_type PlayerSpawn;

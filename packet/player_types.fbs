@@ -1,0 +1,24 @@
+namespace tower.network.packet;
+
+enum PlayerStatType: uint8 {
+    LEVEL, EXP,
+    STR, MAG, AGI, CON,
+    FAITH
+}
+
+struct PlayerStat {
+    type: PlayerStatType;
+    value: int16;
+}
+
+table PlayerStats {
+    level: int16;
+    exp: int32;
+    
+    str: int16;
+    mag: int16;
+    agi: int16;
+    con: int16;
+
+    optionals: [PlayerStat];
+}

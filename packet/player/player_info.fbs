@@ -1,0 +1,12 @@
+include "entity_types.fbs";
+include "player_types.fbs";
+
+namespace tower.network.packet;
+
+table PlayerInfo {
+    entity_type: EntityType;
+    name: string;
+    stats: PlayerStats;
+}
+
+root_type PlayerInfo;
