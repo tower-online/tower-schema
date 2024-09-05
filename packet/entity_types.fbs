@@ -4,8 +4,7 @@ namespace tower.network.packet;
 
 enum EntityType: uint16 {
     NONE,
-    PLAYER_HUMAN,
-    PIGGY
+    HUMAN,
 }
 
 enum EntityResourceType: uint8 {
