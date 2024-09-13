@@ -1,4 +1,5 @@
 include "client/client_join_request.fbs";
+include "client/client_join_response.fbs";
 include "client/heart_beat.fbs";
 
 include "entity/entity_spawns.fbs";
@@ -18,6 +19,7 @@ namespace tower.network.packet;
 union PacketType {
     // client
     ClientJoinRequest,
+    ClientJoinResponse,
     HeartBeat,
 
     // entity

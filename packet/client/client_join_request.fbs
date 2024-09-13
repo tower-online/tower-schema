@@ -1,5 +1,3 @@
-include "types.fbs";
-
 namespace tower.network.packet;
 
 table ClientJoinRequest {

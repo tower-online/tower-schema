@@ -1,0 +1,11 @@
+include "types.fbs";
+include "player/player_spawn.fbs";
+
+namespace tower.network.packet;
+
+table ClientJoinResponse {
+    current_location: WorldLocation;
+    spawn: PlayerSpawn;
+}
+
+root_type ClientJoinResponse;
