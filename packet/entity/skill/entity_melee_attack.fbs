@@ -1,4 +1,4 @@
-include "entity_types.fbs";
+include "entity/entity_types.fbs";
 
 namespace tower.network.packet;
 

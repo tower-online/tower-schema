@@ -1,12 +1,11 @@
-include "player_types.fbs";
-include "player_info.fbs";
+include "player/player_types.fbs";
 
 namespace tower.network.packet;
 
 table PlayerSpawn {
     is_master: bool;
     entity_id: uint32;
-    info: PlayerInfo;
+    data: PlayerData;
 }
 
 root_type PlayerSpawn;

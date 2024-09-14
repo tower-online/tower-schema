@@ -1,0 +1,10 @@
+include "types.fbs";
+include "world/world_types.fbs";
+
+namespace tower.network.packet;
+
+table PlayerEnterZoneRequest {
+    location: WorldLocation;
+}
+
+root_type PlayerEnterZoneRequest;

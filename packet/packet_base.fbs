@@ -8,9 +8,8 @@ include "entity/entity_movements.fbs";
 include "entity/entity_resource_changes.fbs";
 include "entity/skill/entity_melee_attack.fbs";
 
-include "player/player_enter_zone.fbs";
-include "player/player_exit_zone.fbs";
-include "player/player_info.fbs";
+include "player/player_enter_zone_request.fbs";
+include "player/player_enter_zone_response.fbs";
 include "player/player_movement.fbs";
 include "player/player_spawn.fbs";
 
@@ -31,8 +30,8 @@ union PacketType {
     EntityMeleeAttack,
 
     // player
-    PlayerEnterZone,
-    PlayerExitZone,
+    PlayerEnterZoneRequest,
+    PlayerEnterZoneResponse,
     PlayerMovement,
     PlayerSpawn,
 }

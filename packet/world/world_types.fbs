@@ -1,0 +1,6 @@
+include "types.fbs";
+
+struct WorldLocation {
+    floor: uint8;
+    zone_id: uint32;
+}

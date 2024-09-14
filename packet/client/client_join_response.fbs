@@ -1,5 +1,6 @@
 include "types.fbs";
 include "player/player_spawn.fbs";
+include "world/world_types.fbs";
 
 namespace tower.network.packet;
 

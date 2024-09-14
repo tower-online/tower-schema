@@ -1,3 +1,5 @@
+include "entity/entity_types.fbs";
+
 namespace tower.network.packet;
 
 enum PlayerStatType: uint8 {
@@ -9,6 +11,12 @@ enum PlayerStatType: uint8 {
 struct PlayerStat {
     type: PlayerStatType;
     value: int16;
+}
+
+table PlayerData {
+    entity_type: EntityType;
+    name: string;
+    stats: PlayerStats;
 }
 
 table PlayerStats {
