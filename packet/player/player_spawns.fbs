@@ -1,0 +1,10 @@
+include "player/player_types.fbs";
+include "player/player_spawn.fbs";
+
+namespace tower.network.packet;
+
+table PlayerSpawns {
+    spawns: [PlayerSpawn];
+}
+
+root_type PlayerSpawns;

@@ -12,6 +12,7 @@ include "player/player_enter_zone_request.fbs";
 include "player/player_enter_zone_response.fbs";
 include "player/player_movement.fbs";
 include "player/player_spawn.fbs";
+include "player/player_spawns.fbs";
 
 namespace tower.network.packet;
 
@@ -34,6 +35,7 @@ union PacketType {
     PlayerEnterZoneResponse,
     PlayerMovement,
     PlayerSpawn,
+    PlayerSpawns
 }
 
 table PacketBase {
