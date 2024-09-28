@@ -1,6 +1,7 @@
 include "client/client_join_request.fbs";
 include "client/client_join_response.fbs";
 include "client/heart_beat.fbs";
+include "client/ping.fbs";
 
 include "entity/entity_spawns.fbs";
 include "entity/entity_despawn.fbs";
@@ -21,6 +22,7 @@ union PacketType {
     ClientJoinRequest,
     ClientJoinResponse,
     HeartBeat,
+    Ping,
 
     // entity
     EntitySpawns,
@@ -35,7 +37,7 @@ union PacketType {
     PlayerEnterZoneResponse,
     PlayerMovement,
     PlayerSpawn,
-    PlayerSpawns
+    PlayerSpawns,
 }
 
 table PacketBase {

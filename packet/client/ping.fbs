@@ -1,0 +1,7 @@
+namespace tower.network.packet;
+
+table Ping {
+    timestamp: int64;
+}
+
+root_type Ping;
