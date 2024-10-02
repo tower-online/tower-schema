@@ -5,7 +5,7 @@ namespace tower.network.packet;
 struct EntitySpawn {
     entity_type: EntityType;
     entity_id: uint32;
-    position: Vector2;
+    position: Vector3;
     rotation: float32;
 }
 

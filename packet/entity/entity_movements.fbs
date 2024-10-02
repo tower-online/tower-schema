@@ -4,7 +4,7 @@ namespace tower.network.packet;
 
 struct EntityMovement {
     entity_id: uint32;
-    target_position: Vector2;
+    target_position: Vector3;
     target_direction: Vector2;
 }
 
