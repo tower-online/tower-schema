@@ -7,13 +7,14 @@ include "entity/entity_spawns.fbs";
 include "entity/entity_despawn.fbs";
 include "entity/entity_movements.fbs";
 include "entity/entity_resource_changes.fbs";
-include "entity/skill/entity_melee_attack.fbs";
 
 include "player/player_enter_zone_request.fbs";
 include "player/player_enter_zone_response.fbs";
 include "player/player_movement.fbs";
 include "player/player_spawn.fbs";
 include "player/player_spawns.fbs";
+
+include "skills/skill_melee_attack.fbs";
 
 namespace tower.network.packet;
 
@@ -29,8 +30,6 @@ union PacketType {
     EntityDespawn,
     EntityResourceChanges,
     EntityMovements,
-    // entity/skill
-    EntityMeleeAttack,
 
     // player
     PlayerEnterZoneRequest,
@@ -38,6 +37,9 @@ union PacketType {
     PlayerMovement,
     PlayerSpawn,
     PlayerSpawns,
+
+    // skills
+    SkillMeleeAttack,
 }
 
 table PacketBase {

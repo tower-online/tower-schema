@@ -1,0 +1,10 @@
+include "types.fbs";
+
+namespace tower.network.packet;
+
+table SkillMeleeAttack {
+    entity_id: uint32;
+    weapon_slot: uint8;
+}
+
+root_type SkillMeleeAttack;
