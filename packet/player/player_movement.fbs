@@ -3,7 +3,8 @@ include "types.fbs";
 namespace tower.network.packet;
 
 table PlayerMovement {
-    target_direction: Vector2;
+    x: float;
+    z: float;
 }
 
 root_type PlayerMovement;
