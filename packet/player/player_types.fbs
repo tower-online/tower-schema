@@ -13,9 +13,16 @@ struct PlayerStat {
     value: int16;
 }
 
+struct PlayerResource {
+    type: EntityResourceType;
+    value: int32;
+    max_value: int32;
+}
+
 table PlayerData {
     entity_type: EntityType;
     name: string;
+    resources: [PlayerResource];
     stats: PlayerStats;
 }
 
