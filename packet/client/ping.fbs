@@ -1,6 +1,7 @@
 namespace tower.network.packet;
 
 table Ping {
+	seq: uint32;
     timestamp: int64;
 }
 
