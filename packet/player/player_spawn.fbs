@@ -5,6 +5,7 @@ namespace tower.network.packet;
 table PlayerSpawn {
     is_master: bool;
     entity_id: uint32;
+    client_id: uint32;
     data: PlayerData;
 }
 
