@@ -1,0 +1,13 @@
+namespace tower.network.packet;
+
+enum PlayerJoinPartyResult : uint8 {
+    OK,
+    PARTY_FULL,
+    REJECTED,
+}
+
+table PlayerJoinPartyResponse {
+    result: PlayerJoinPartyResult;
+}
+
+root_type PlayerJoinPartyResponse;

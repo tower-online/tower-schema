@@ -1,0 +1,8 @@
+namespace tower.network.packet;
+
+table PlayerJoinPartyRequest {
+    requester: uint32;
+    requestee: uint32;
+}
+
+root_type PlayerJoinPartyRequest;

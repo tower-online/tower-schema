@@ -10,6 +10,9 @@ include "entity/entity_resource_changes.fbs";
 
 include "player/player_enter_zone_request.fbs";
 include "player/player_enter_zone_response.fbs";
+include "player/player_join_party_request.fbs";
+include "player/player_join_party_response.fbs";
+include "player/player_leave_party.fbs";
 include "player/player_movement.fbs";
 include "player/player_spawn.fbs";
 include "player/player_spawns.fbs";
@@ -34,6 +37,9 @@ union PacketType {
     // player
     PlayerEnterZoneRequest,
     PlayerEnterZoneResponse,
+    PlayerJoinPartyRequest,
+    PlayerJoinPartyResponse,
+    PlayerLeaveParty,
     PlayerMovement,
     PlayerSpawn,
     PlayerSpawns,

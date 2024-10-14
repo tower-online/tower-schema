@@ -1,0 +1,13 @@
+namespace tower.network.packet;
+
+enum PlayerLeavePartyReason : uint8 {
+    REQUESTED,
+    KICKED,
+}
+
+table PlayerLeaveParty {
+    target_id: uint32;
+    reason: PlayerLeavePartyReason;
+}
+
+root_type PlayerLeaveParty;
