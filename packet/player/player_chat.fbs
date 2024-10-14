@@ -1,0 +1,17 @@
+namespace tower.network.packet;
+
+enum PlayerChatTarget : uint8 {
+    SERVER,
+    ZONE,
+    PARTY,
+    GUILD,
+    WHISPER,
+}
+
+table PlayerChat {
+    target: PlayerChatTarget;
+    target_name: string;
+    message: string;
+}
+
+root_type PlayerChat;
