@@ -6,7 +6,7 @@ enum PlayerLeavePartyReason : uint8 {
 }
 
 table PlayerLeaveParty {
-    target_id: uint32;
+    leaver_id: uint32;
     reason: PlayerLeavePartyReason;
 }
 
