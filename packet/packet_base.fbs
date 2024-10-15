@@ -36,6 +36,7 @@ union PacketType {
     EntityMovements,
 
     // player
+    PlayerChat,
     PlayerEnterZoneRequest,
     PlayerEnterZoneResponse,
     PlayerJoinPartyRequest,

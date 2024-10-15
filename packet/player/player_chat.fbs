@@ -10,7 +10,7 @@ enum PlayerChatTarget : uint8 {
 
 table PlayerChat {
     target: PlayerChatTarget;
-    target_name: string;
+    target_id: uint32;
     message: string;
 }
 
