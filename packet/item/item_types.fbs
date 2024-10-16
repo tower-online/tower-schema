@@ -1,0 +1,9 @@
+namespace tower.network.packet;
+
+enum ItemRarity : uint8 {
+    NORMAL, MAGIC, RARE, LEGENDARY, UNIQUE
+}
+
+enum ItemType : uint16 {
+    NONE, GOLD, FIST
+}

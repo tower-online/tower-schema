@@ -1,0 +1,11 @@
+include "item/item_types.fbs";
+
+namespace tower.network.packet;
+
+table ItemSpawn {
+    object_id: uint32;
+    item_type: ItemType;
+    amount: uint32;
+}
+
+root_type ItemSpawn;

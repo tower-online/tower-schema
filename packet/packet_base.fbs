@@ -8,6 +8,8 @@ include "entity/entity_despawn.fbs";
 include "entity/entity_movements.fbs";
 include "entity/entity_resource_changes.fbs";
 
+include "item/item_spawn.fbs";
+
 include "player/player_chat.fbs";
 include "player/player_enter_zone_request.fbs";
 include "player/player_enter_zone_response.fbs";
@@ -34,6 +36,9 @@ union PacketType {
     EntityDespawn,
     EntityResourceChanges,
     EntityMovements,
+
+    // item
+    ItemSpawn,
 
     // player
     PlayerChat,
