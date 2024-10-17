@@ -9,6 +9,7 @@ include "entity/entity_movements.fbs";
 include "entity/entity_resource_changes.fbs";
 
 include "item/item_spawn.fbs";
+include "item/item_despawn.fbs";
 
 include "player/player_chat.fbs";
 include "player/player_enter_zone_request.fbs";
@@ -17,6 +18,7 @@ include "player/player_join_party_request.fbs";
 include "player/player_join_party_response.fbs";
 include "player/player_leave_party.fbs";
 include "player/player_movement.fbs";
+include "player/player_pickup_item.fbs";
 include "player/player_spawn.fbs";
 include "player/player_spawns.fbs";
 
@@ -39,6 +41,7 @@ union PacketType {
 
     // item
     ItemSpawn,
+    ItemDespawn,
 
     // player
     PlayerChat,
@@ -48,6 +51,7 @@ union PacketType {
     PlayerJoinPartyResponse,
     PlayerLeaveParty,
     PlayerMovement,
+    PlayerPickupItem,
     PlayerSpawn,
     PlayerSpawns,
 

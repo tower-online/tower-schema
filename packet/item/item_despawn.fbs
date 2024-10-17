@@ -1,0 +1,7 @@
+namespace tower.network.packet;
+
+table ItemDespawn {
+    object_id: uint32;
+}
+
+root_type ItemDespawn;
